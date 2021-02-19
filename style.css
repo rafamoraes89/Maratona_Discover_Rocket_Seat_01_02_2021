@@ -105,15 +105,44 @@ button:hover {
 
 /* header =====================================*/
 header {
+    width: 100vw;
     background: #2d4a22;
-    padding:2rem 0 10rem;
-    text-align: center;
-    
+    padding:2rem 0 10rem;   
+}
+
+#cabecalho {
+    width: min(90vw, 800px);
+    margin: auto;
+    display: flex;
+    background: #2d4a22;
+    justify-content: space-between;  
+    flex-wrap: wrap;  
 }
 
 header h1 {
     color: #fff;
     font-weight: 100;
+}
+
+
+#f {
+    align-items: center;
+    color: white;   
+}
+
+#login, #password {
+    height: 2rem;
+    width: 10rem;
+}
+
+.l {
+   font-weight: bold;
+}
+
+#bl {
+    width: 7rem;
+    height: 2rem;
+    margin-left:1rem;
 }
 
 /* balance =====================================*/
@@ -314,3 +343,44 @@ footer {
     }
 }
 
+@media (max-width: 800px) {
+    #cabecalho {
+        width: min(90vw, 800px);
+        margin: 0 auto;
+        display: block;
+        text-align: center; 
+          
+    }
+    .l {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    #login {
+        height: 3rem;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #password {
+        height: 3rem;
+        display: block;
+        width: 88.5%;
+        margin: 0 auto;
+    }
+
+    #bl {
+        height: 3rem;
+        display: block;
+        width: 89%;
+        margin: 1.5rem auto;
+    }
+
+    #f {
+        position: relative;
+        text-align: center;
+        margin: 4rem 0 0 0;
+       
+    }
+}
